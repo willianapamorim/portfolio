@@ -1,0 +1,164 @@
+/*
+0 - 650px:      Telefone
+650 - 900px:    Tablet em retrato
+900 - 1200px:   Tablet em paisagem
+1200 - 1800px:  estilo normal
+1800px + :Desktop grande
+*/
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit; 
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth; 
+}
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 59%; } 
+    }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 56%; } 
+    }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 65%; 
+    } 
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Source Sans Pro', sans-serif; 
+  padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none; 
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer; 
+}
+
+textarea {
+  resize: none; 
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-between;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    line-height: 15px;
+    padding: 10px 50px;
+}
+
+.header span {
+    color: #3b3548;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+.header span:hover {
+    color: #7843E9;
+}
+
+.header-links a {
+    color: #3b3548;
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 26px 14px;
+    text-align: right;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+
+.header-links a:hover {
+    color: #7843E9;
+
+}
+
+.header-links .menu-hamburguer {
+    display: none;
+    font-size: 18px; 
+    padding: 26px 0px;
+}
+
+
+
+/* Media query para celular (600px) */
+@media (max-width: 650px) {
+    .header-links a{
+      display: none;
+    }
+  
+    .header-links .menu-hamburguer {
+      display: block; 
+    }
+}
+
+/* Media query para tablet em retrato (650 - 900px) */
+@media (min-width: 650px) and (max-width: 900px) {
+    .header span {
+        font-size: 15px;
+    }
+
+    .header-links a {
+        font-size: 15px;
+        padding: 26px 10px;
+    }
+  }
+  
+  /* Media query para tablet em paisagem (900 - 1200px) */
+  @media (min-width: 900px) and (max-width: 1200px) {
+    header span {
+        font-size: 18px;
+    }
+
+    .header-links a {
+        font-size: 17px;
+        padding: 26px 10px;
+    }
+  }
+  
+  /* Media query para desktop grande (1800px +) */
+  @media (min-width: 1800px) {
+    /* Seus estilos para desktop grande */
+  }
+
