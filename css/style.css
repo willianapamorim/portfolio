@@ -169,12 +169,111 @@ textarea {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-}
-
-.div-icon {
   font-size: 40px;
   gap: 20px;
 }
+
+.section-sobre {
+  background: linear-gradient(
+    to top right,
+    rgb(255, 255, 255),
+    rgba(172, 172, 172, 0.904)
+  );
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-title {
+  color: #111;
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 100px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-sobre i {
+  font-size: 30px;
+  color: #7843e9;
+  margin-bottom: 100px;
+}
+
+.sobre-container {
+  align-items: first baseline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.div-conhecer {
+  order: 1;
+  width: 40%;
+}
+
+.div-conhecer h3 {
+  margin-bottom: 70px;
+}
+
+.sobre-container h3 {
+  color: #111;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.sobre-container p {
+  color: #3b3548;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.div-habilidades {
+  order: 2;
+  width: 40%;
+}
+
+.div-habilidades h3 {
+  margin-bottom: 20px;
+}
+
+.habilidades-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+.habilidade-box {
+  background-color: #9993;
+  border-radius: 5px;
+  color: #3b3548;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0px 15px 40px 0px;
+  padding: 10px 20px;
+  width: 30%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media query para celular (600px) */
 @media (max-width: 650px) {
@@ -192,6 +291,30 @@ textarea {
 
   .section-home p {
     font-size: 16px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    width: 90%;
+    align-items: normal;
+    gap: 100px;
+  }
+
+  .div-conhecer {
+    width: 100%;
+  }
+
+  .div-habilidades {
+    width: 100%;
+  }
+
+  .sobre-container h3 {
+    text-align: center;
   }
 }
 
@@ -213,6 +336,26 @@ textarea {
   .section-home p {
     font-size: 18px;
   }
+
+  .sobre-container {
+    flex-direction: column;
+    width: 80%;
+    align-items: normal;
+    gap: 100px;
+  }
+
+  .div-conhecer {
+    width: 100%;
+  }
+
+  .div-habilidades {
+    width: 100%;
+  }
+
+  .sobre-container h3 {
+    text-align: center;
+  }
+  
 }
 
 /* Media query para tablet em paisagem (900 - 1200px) */
