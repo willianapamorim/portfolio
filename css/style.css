@@ -174,12 +174,12 @@ textarea {
 }
 
 .section-sobre {
+  align-items: center;
   background: linear-gradient(
     to top right,
     rgb(255, 255, 255),
     rgba(172, 172, 172, 0.904)
   );
-  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,14 +189,14 @@ textarea {
   color: #111;
   font-size: 35px;
   font-weight: 800;
-  margin-top: 100px;
   letter-spacing: 3px;
+  margin-top: 100px;
   text-transform: uppercase;
 }
 
 .section-sobre i {
-  font-size: 30px;
   color: #7843e9;
+  font-size: 30px;
   margin-bottom: 100px;
 }
 
@@ -254,13 +254,73 @@ textarea {
   font-weight: 600;
   margin: 0px 15px 40px 0px;
   padding: 10px 20px;
-  width: 30%;
   text-align: center;
+  text-transform: uppercase;
+  width: 30%;
+}
+
+.section-projetos {
+  background: linear-gradient(
+    to bottom right,
+    rgba(245, 245, 245, 0.8),
+    rgba(172, 172, 172, 0.904)
+  );
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.projetos-title {
+  color: #111;
+  font-size: 35px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-top: 100px;
   text-transform: uppercase;
 }
 
+.projetos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 0px;
+  width: 90%;
+  align-items: center;
+}
 
+.img-projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  order: 1;
+}
 
+.img-box {
+  border: 5px solid #3b3548;
+  width: 90%;
+  height: 300px;
+}
+
+.descricao-projetos {
+  text-align: left;
+  width: 40%;
+  order: 2;
+}
+
+.descricao-projetos h3 {
+  text-align: center;
+  color: #111;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.descricao-projetos p {
+  color: #3b3548;
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
 
 
 
@@ -291,6 +351,7 @@ textarea {
 
   .section-home p {
     font-size: 16px;
+    padding-top: 50px;
   }
 
   .sobre-container {
@@ -299,10 +360,10 @@ textarea {
   }
 
   .sobre-container {
-    flex-direction: column;
-    width: 90%;
     align-items: normal;
+    flex-direction: column;
     gap: 100px;
+    width: 90%;
   }
 
   .div-conhecer {
@@ -315,6 +376,24 @@ textarea {
 
   .sobre-container h3 {
     text-align: center;
+  }
+
+  .projetos-container {
+    display: flex;
+    margin: 100px 0px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-projetos {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .img-box {
+    width: 90%;
+    height: 250px;
   }
 }
 
@@ -338,10 +417,10 @@ textarea {
   }
 
   .sobre-container {
-    flex-direction: column;
-    width: 80%;
     align-items: normal;
+    flex-direction: column;
     gap: 100px;
+    width: 80%;
   }
 
   .div-conhecer {
@@ -355,8 +434,30 @@ textarea {
   .sobre-container h3 {
     text-align: center;
   }
-  
+
+  .img-box {
+    height: 200px;
+  }
+
+  .projetos-container {
+    display: flex;
+    margin: 100px 0px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .img-projetos {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .img-box {
+    width: 60%;
+    height: 250px;
+  }
 }
+
 
 /* Media query para tablet em paisagem (900 - 1200px) */
 @media (min-width: 900px) and (max-width: 1200px) {
@@ -375,6 +476,10 @@ textarea {
 
   .section-home p {
     font-size: 20px;
+  }
+
+  .img-box {
+    height: 250px;
   }
 }
 
