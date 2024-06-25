@@ -362,6 +362,7 @@ textarea {
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: lowercase;
+  width: 90%;
 }
 
 .contato-box {
