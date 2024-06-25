@@ -379,9 +379,25 @@ textarea {
   font-size: 50px;
 }
 
+.contato-box i:hover {
+  color: #7843e9;
+}
+
 .contato-box span {
   display: flex;
   align-items: center;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 
