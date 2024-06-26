@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link 
+      rel="stylesheet" 
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    >
     <title>Portfólio | Willian Amorim</title>
   </head>
   <body>
@@ -21,16 +25,16 @@
       <nav>
           <ul>
               <li>
-                  <a href="" class="active">Home</a>
+                  <a href="#home" class="active">Home</a>
               </li>
               <li>
-                  <a href="">Sobre</a>
+                  <a href="#sobre">Sobre</a>
               </li>
               <li>
-                  <a href="">Projetos</a>
+                  <a href="#projetos">Projetos</a>
               </li>
               <li>
-                  <a href="">Contato</a>
+                  <a href="#contatos">Contato</a>
               </li>
           </ul>
       </nav>
@@ -41,7 +45,7 @@
 
 
     <section class="section-home">
-      <div class="section-home-container">
+      <div class="section-home-container" data-aos="fade-up">
         <h1 class="title">Olá, eu sou Willian Amorim</h1>
 
         <p>Um constante aprendiz, desenvolvedor web com foco em Front End</p>
@@ -63,12 +67,12 @@
     </section> <!-- section home -->
     
 
-    <section class="section-sobre">
+    <section class="section-sobre" id="sobre">
       <h2 class="sobre-title">Sobre Mim</h2>
       <i class="fa-solid fa-minus ico"></i>
 
       <div class="sobre-container">
-        <div class="div-conhecer">
+        <div class="div-conhecer" data-aos="fade-up">
           <h3>Me conhecer!</h3>
 
           <p>
@@ -86,7 +90,7 @@
           </p>
         </div>
 
-        <div class="div-habilidades">
+        <div class="div-habilidades" data-aos="fade-up">
           <h3>Minhas habilidades</h3>
 
           <div class="habilidades-boxes">
@@ -105,12 +109,12 @@
     </section> <!-- section sobre -->
     
 
-    <section class="section-projetos">
+    <section class="section-projetos" id="projetos">
       <h2 class="projetos-title">Projetos</h2>
       <i class="fa-solid fa-minus ico"></i>
 
       <div class="projetos-container">
-        <div class="img-projetos">
+        <div class="img-projetos" data-aos="fade-up">
           <div class="img-box"></div>
         </div>
         <div class="descricao-projetos">
@@ -120,7 +124,7 @@
       </div>
 
       <div class="projetos-container">
-        <div class="img-projetos">
+        <div class="img-projetos" data-aos="fade-up">
           <div class="img-box"></div>
         </div>
         <div class="descricao-projetos">
@@ -130,7 +134,7 @@
       </div>
 
       <div class="projetos-container">
-        <div class="img-projetos">
+        <div class="img-projetos" data-aos="fade-up">
           <div class="img-box"></div>
         </div>
         <div class="descricao-projetos">
@@ -140,11 +144,11 @@
       </div>
     </section> <!-- section projetos -->
 
-    <section class="section-contato">
+    <section class="section-contato" id="contatos">
       <h2 class="contato-title">Contato</h2>
       <i class="fa-solid fa-minus"></i>
 
-      <p>
+      <p data-aos="fade-up">
         Sinta-se à vontade para entrar em contato comigo através das plataformas abaixo
       </p>
 
@@ -164,5 +168,7 @@
       <h2>Desenvolvido por Willian Amorim</h2>
     </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
