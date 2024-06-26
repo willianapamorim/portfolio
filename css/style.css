@@ -70,7 +70,7 @@ textarea {
   resize: none;
 }
 
-.header {
+header {
   align-items: center;
   background-color: #fff;
   display: flex;
@@ -82,7 +82,7 @@ textarea {
   width: 100%;
 }
 
-.header span {
+header .logo {
   color: #3b3548;
   font-size: 22px;
   font-weight: 700;
@@ -91,11 +91,15 @@ textarea {
   transition: color 0.5s ease;
 }
 
-.header span:hover {
+header .logo:hover {
   color: #7843e9;
 }
 
-.header-links a {
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
   color: #3b3548;
   display: inline-block;
   font-size: 19px;
@@ -107,14 +111,25 @@ textarea {
   transition: color 0.5s ease;
 }
 
-.header-links a:hover {
+header nav ul li a:hover,
+header nav ul li a.active {
   color: #7843e9;
 }
 
-.header-links .menu-hamburguer {
+.menu-hamburguer {
   display: none;
   font-size: 18px;
   padding: 26px 0px;
+}
+
+.menu-hamburguer:hover {
+  color: #7843e9;
+  transition: color 0.5s ease;
+}
+
+.hamburger {
+  cursor: pointer;
+  display: none;
 }
 
 .section-home {
@@ -401,30 +416,32 @@ textarea {
   text-transform: uppercase;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media query para celular (600px) */
 @media (max-width: 650px) {
-  .header-links a {
-    display: none;
+  .hamburger {
+    display: block;
   }
 
-  .header-links .menu-hamburguer {
+  header nav {
+    position: absolute;
+    width: 100%;
+    left: -100%;
+    top: 50px;
+    background: #fff;
+    padding: 10px;
+    transition: 0.4s;
+  }
+
+  header #nav_check:checked ~ nav {
+    left: 0;
+  }
+
+  header nav ul {
     display: block;
+  }
+
+  header nav ul li a {
+    margin: 0px 0;
   }
 
   .section-home .title {
@@ -481,15 +498,6 @@ textarea {
 
 /* Media query para tablet em retrato (650 - 900px) */
 @media (min-width: 650px) and (max-width: 900px) {
-  .header span {
-    font-size: 15px;
-  }
-
-  .header-links a {
-    font-size: 15px;
-    padding: 26px 10px;
-  }
-
   .section-home .title {
     font-size: 50px;
   }
@@ -540,18 +548,8 @@ textarea {
   }
 }
 
-
 /* Media query para tablet em paisagem (900 - 1200px) */
 @media (min-width: 900px) and (max-width: 1200px) {
-  header span {
-    font-size: 18px;
-  }
-
-  .header-links a {
-    font-size: 17px;
-    padding: 26px 10px;
-  }
-
   .section-home .title {
     font-size: 50px;
   }
@@ -563,9 +561,4 @@ textarea {
   .img-box {
     height: 250px;
   }
-}
-
-/* Media query para desktop grande (1800px +) */
-@media (min-width: 1800px) {
-  /* Seus estilos para desktop grande */
 }
