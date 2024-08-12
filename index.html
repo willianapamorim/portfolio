@@ -19,7 +19,7 @@
     <title>Portfólio | Willian Amorim</title>
   </head>
   <body>
-  <header>
+  <header id="header">
       <div class="logo">WILLIAN AMORIM</div>
       <input type="checkbox" id="nav_check" hidden>
       <nav>
@@ -68,10 +68,10 @@
     
 
     <section class="section-sobre" id="sobre">
-      <h2 class="sobre-title">Sobre Mim</h2>
+      <h2 class="sobre-title" data-aos="fade-up">Sobre Mim</h2>
       <i class="fa-solid fa-minus ico"></i>
 
-      <div class="sobre-container">
+      <div class="sobre-container" data-aos="fade-up">
         <div class="div-conhecer" data-aos="fade-up">
           <h3>Me conhecer!</h3>
 
@@ -110,43 +110,28 @@
     
 
     <section class="section-projetos" id="projetos">
-      <h2 class="projetos-title">Projetos</h2>
-      <i class="fa-solid fa-minus ico"></i>
-
-      <div class="projetos-container">
-        <div class="img-projetos" data-aos="fade-up">
-          <div class="img-box"></div>
+      <h2 class="projetos-title" data-aos="fade-up">Projetos</h2>
+      <i class="fa-solid fa-minus ico" data-aos="fade-up"></i>
+      
+      <div class="conteudo__geral" data-aos="fade-up">
+        <div class="container">
+            <div class="container-carrossel">
+                <div class="carrossel">
+                    <div class="carrossel-item"> <img src="imagens/image.png" alt="#"></div>
+                    <div class="carrossel-item"></div>
+                    <div class="carrossel-item"></div>
+                    <div class="carrossel-item"></div>
+                    <div class="carrossel-item"></div>
+                    <div class="carrossel-item"></div>
+                </div>
+            </div>
         </div>
-        <div class="descricao-projetos">
-          <h3>Descrição</h3>
-          <p>Em breve...</p>
-        </div>
-      </div>
-
-      <div class="projetos-container">
-        <div class="img-projetos" data-aos="fade-up">
-          <div class="img-box"></div>
-        </div>
-        <div class="descricao-projetos">
-          <h3>Descrição</h3>
-          <p>Em breve...</p>
-        </div>
-      </div>
-
-      <div class="projetos-container">
-        <div class="img-projetos" data-aos="fade-up">
-          <div class="img-box"></div>
-        </div>
-        <div class="descricao-projetos">
-          <h3>Descrição</h3>
-          <p>Em breve...</p>
-        </div>
-      </div>
+    </div>
     </section> <!-- section projetos -->
 
     <section class="section-contato" id="contatos">
-      <h2 class="contato-title">Contato</h2>
-      <i class="fa-solid fa-minus"></i>
+      <h2 class="contato-title" data-aos="fade-up">Contato</h2>
+      <i class="fa-solid fa-minus" data-aos="fade-up"></i>
 
       <p data-aos="fade-up">
         Sinta-se à vontade para entrar em contato comigo através das plataformas abaixo
@@ -154,12 +139,12 @@
 
       <div class="contato-box">
         <a href="mailto:willianapamorim@gmail.com">
-          <i class="fas fa-envelope ico"></i>
+          <i class="fas fa-envelope ico" data-aos="fade-up"></i>
         </a>
         
         <a href="https://www.linkedin.com/in/willian-aparecido-amorim"
         target="_blank">
-          <i class="fab fa-linkedin ico"></i>
+          <i class="fab fa-linkedin ico" data-aos="fade-up"></i>
         </a>
       </div>
     </section>
@@ -169,6 +154,6 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="js/script.js"></script>
+    <script type="module" src="js/script.js"></script>
   </body>
 </html>
