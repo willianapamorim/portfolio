@@ -106,6 +106,10 @@ header {
   color: white; 
 }
 
+.header-preto .menu-hamburguer {
+  color: #fff;
+}
+
 header .logo {
   color: #3b3548;
   font-size: 22px;
