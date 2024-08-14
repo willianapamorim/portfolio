@@ -3,7 +3,7 @@ export function mudaHeader() {
     const header = document.getElementById("header");
     const projetosSection = document.getElementById("projetos");
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         const sectionTop = projetosSection.getBoundingClientRect().top;
         const sectionBottom = projetosSection.getBoundingClientRect().bottom;
 
